@@ -1,4 +1,4 @@
 CMSTorinoWebPage
 ================
 
-Repository for the CMS Torino group
+Repository for the CMS Torino group.
