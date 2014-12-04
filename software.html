@@ -47,13 +47,6 @@
 </script>
 <script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script>
 
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script> 
-$(function(){
-  $("#TorinoFooter").load("footer.html"); 
-});
-</script> 
-
 </head>
 
 <body>
@@ -222,7 +215,80 @@ $(function(){
 <!-- #su-wrap end --> 
 
 <!-- #footer --> 
-<div id="TorinoFooter"></div>
+
+<div id="footer" class="clearfix footer" role="contentinfo">
+  <div class="container">
+    <div id="footer-content" class="row">
+      <div class="col-xs-12 col-sm-1-4 col-md-2">
+        <div class="block">
+          <h3>Theses</h3>
+          <ul class="footer-list">
+            <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
+            <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
+            <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
+            <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
+	    <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
+            <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
+            <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-1-4 col-md-2">
+        <div class="block">
+          <h3>People</h3>
+          <ul class="footer-list">
+            <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
+            <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
+            <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-1-4 col-md-2">
+        <div class="block">
+          <h3>About CMS Torino</h3>
+          <ul class="footer-list">
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-1-4 col-md-2">
+        <div class="block">
+          <h3>Resources</h3>
+          <ul class="footer-list">
+	    <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
+	    <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
+            <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
+            <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
+            <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
+            <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Global footer snippet start -->
+  <div id="global-footer">
+    <div class="container">
+      <div class="row">
+        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
+      <!-- .row end --> 
+    </div>
+    <!-- .container end --> 
+  </div>
+  <!-- global-footer end --> 
+  <!-- Global footer snippet end --> 
+  
+  </div>
+
+
+
+</div>
+
+
+
+
+
  
 
 <!-- JS and jQuery -->
