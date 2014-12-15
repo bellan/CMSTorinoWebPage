@@ -47,193 +47,222 @@
 </script>
 <script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
 
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ______________________________________BODY______________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  
 <body>
-<div id="su-wrap"> 
-  <!-- #su-wrap start -->
-  <div id="su-content"> <!-- #su-content start --> 
-    
-    <!-- #header --> 
-    <!--=== Top ===-->
-<div id="top">
-  <div class="container"> 
-    <!--=== Skip links ===-->
-    <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
-    <!-- /Skip links --> 
-  </div>
-</div>
-<!--/top--> 
-
-<!--=== Header ===-->
-<div id="header" class="clearfix" role="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8"> 
-        <!-- Logo -->
-        <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
-        <!-- /logo --> 
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Menu -->
-<div id="mainmenu" class="clearfix" role="navigation">
-  <div class="container">
-    <div class="navbar navbar-default"> 
-      
-      <!-- main navigation -->
-      <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
-      <!-- /nav-collapse -->
-      
-      <div class="navbar-collapse collapse"> 
-        <div role="navigation">
-          <div id="primary-nav" tabindex="0">
-            <ul class="nav navbar-nav" aria-label="primary navigation">
-              <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
-              <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
-	      <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
-              <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
-            </ul>
-          </div>
-          <div id="gateway-nav">
-            <h4>Information for...</h4>
-            <ul id="gateways" class="pull-right" aria-label="gateways">
-              <li id="nav-students"><a href="info_students.html">Students</a></li>
-              <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- /nav-collapse --> 
-    </div>
-    <!-- /navbar --> 
-    
-  </div>
-  <!-- /container --> 
-</div>
-<!-- /mainmenu --> 
-
-    <div id="content" role="main" tabindex="0">
-
-      
-      <div class="container margin-bottom-30"> 
-        <!-- Theses -->
-        <div class="headline">
-          <h2>Compact Muon Solenoid (CMS)</h2>
-        </div>
-        <div class="col-sm-6" id="more-news">
-	  CMS &egrave; uno dei 4 esperimenti posti lungo il fascio di LHC ed ha come obiettivo principale la ricerca del bosone di Higgs e 
-	  di fenomeni fisici non predetti dal Modello Standard ma da sue possibili estensioni, come ad esempio la Supersimmetria.
-	  L'apparato sperimentale di CMS ha una struttura a <i>scatola cinese</i> e i suoi rivelatori sono immersi in un forte campo 
-	  magnetico di 3.8 T realizzato grazie al pi&ugrave; grande solenoide superconduttore mai realizzato al mondo capace di immagazzinare 
-	  un'energia di 2,4GJ. CMS &egrave; stato disegnato per ottenere massima efficienza e precisione nella rivelazione di fotoni, elettroni, muoni, 
-	  leptoni tau, jet, jet originati da quark b ed energia mancante indice della presenza di particelle neutre elusive. 
-	  L'apparato &egrave; quanto pi&ugrave; ermetico possibile e arriva a coprire in angolo fino a circa 1&deg; dalla linea dei fasci. 
-	  Se pure di grandi dimensioni rispetto ad esperimenti del passato (15 m di diametro per 22 m di lunghezza e un peso pari a 14500 t) 
-	  CMS &egrave; un apparato elegantemente compatto.
-
-	  L'INFN &egrave; fortemente coinvolto in CMS, circa 250 fisici e ingegneri provenienti da 14 Sezioni e 2 Laboratori Nazionali lavorano all'esperimento. 
-	  In particolare frazioni significative del sistema di rivelazione per muoni (sia DT che RPC), del calorimetro elettromagnetico e 
-	  del tracciatore centrale a strisce di silicio sono stati realizzati in Italia. 
-
-        </div>
-      </div>
-
-
-
-
-    </div>
-    <!--/body--> 
-  </div>
-  <!-- #su-content end --> 
-</div>
-<!-- #su-wrap end --> 
-
-<!-- #footer --> 
-<div id="footer" class="clearfix footer" role="contentinfo">
-  <div class="container">
-    <div id="footer-content" class="row">
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Theses</h3>
-          <ul class="footer-list">
-            <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics analyses</a></li>
-            <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
-            <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
-            <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drtift Tube Chambers</a></li>
-            <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
-            <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future detector technologies</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>People</h3>
-          <ul class="footer-list">
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>About CMS Torino</h3>
-          <ul class="footer-list">
-            <li><a href="history.html">History</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Resources</h3>
-          <ul class="footer-list">
-	    <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
-	    <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
-            <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
-            <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
-            <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
-            <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="hp-buttons" class="col-xs-12 col-md-2">
-        <ul>
-          <li><a href="contacts.html" class="btn btn-u btn-block"><span>Contact Us</span></a> </li>
-        </ul>
-      </div>
-    </div>
-  </div>
   
-  <!-- Global footer snippet start -->
-  <div id="global-footer">
+  <div id="su-wrap"> 
+    <!-- #su-wrap start -->
+    <div id="su-content"> <!-- #su-content start --> 
+      
+      <!--=== Top ===-->
+      <div id="top">
+	<div class="container"> 
+	  <!--=== Skip links ===-->
+	  <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
+	  <!-- /Skip links --> 
+	</div>
+      </div>
+      <!--/top--> 
+
+      <!-- #header -->       
+      <div id="header" class="clearfix" role="banner">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-8"> 
+              <!-- Logo -->
+              <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
+              <!-- /logo --> 
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <!-- Menu -->
+      <div id="mainmenu" class="clearfix" role="navigation">
+	<div class="container">
+	  <div class="navbar navbar-default"> 
+	    
+	    <!-- main navigation -->
+	    <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+	    <!-- /nav-collapse -->
+	    
+	    <div class="navbar-collapse collapse"> 
+              <div role="navigation">
+		<div id="primary-nav" tabindex="0">
+		  <ul class="nav navbar-nav" aria-label="primary navigation">
+		    <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
+		    <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
+		    <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
+		    <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
+		  </ul>
+		</div>
+		<div id="gateway-nav">
+		  <h4>Information for...</h4>
+		  <ul id="gateways" class="pull-right" aria-label="gateways">
+		    <li id="nav-students"><a href="info_students.html">Students</a></li>
+		    <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
+		  </ul>
+		</div>
+              </div>
+	    </div>
+	    <!-- /nav-collapse --> 
+	  </div>
+	  <!-- /navbar --> 
+	  
+	</div>
+	<!-- /container --> 
+      </div>     
+      <!--=== Header ===-->
+
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      
+      
+      <div id="content" role="main" tabindex="0">
+	
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Theses -->
+          <div class="headline">
+            <h2>Compact Muon Solenoid (CMS)</h2>
+          </div>
+          <div class="col-sm-6" id="more-news">
+	    CMS &egrave; uno dei 4 esperimenti posti lungo il fascio di LHC ed ha come obiettivo principale la ricerca del bosone di Higgs e 
+	    di fenomeni fisici non predetti dal Modello Standard ma da sue possibili estensioni, come ad esempio la Supersimmetria.
+	    L'apparato sperimentale di CMS ha una struttura a <i>scatola cinese</i> e i suoi rivelatori sono immersi in un forte campo 
+	    magnetico di 3.8 T realizzato grazie al pi&ugrave; grande solenoide superconduttore mai realizzato al mondo capace di immagazzinare 
+	    un'energia di 2,4GJ. CMS &egrave; stato disegnato per ottenere massima efficienza e precisione nella rivelazione di fotoni, elettroni, muoni, 
+	    leptoni tau, jet, jet originati da quark b ed energia mancante indice della presenza di particelle neutre elusive. 
+	    L'apparato &egrave; quanto pi&ugrave; ermetico possibile e arriva a coprire in angolo fino a circa 1&deg; dalla linea dei fasci. 
+	    Se pure di grandi dimensioni rispetto ad esperimenti del passato (15 m di diametro per 22 m di lunghezza e un peso pari a 14500 t) 
+	    CMS &egrave; un apparato elegantemente compatto.
+	    
+	    L'INFN &egrave; fortemente coinvolto in CMS, circa 250 fisici e ingegneri provenienti da 14 Sezioni e 2 Laboratori Nazionali lavorano all'esperimento. 
+	    In particolare frazioni significative del sistema di rivelazione per muoni (sia DT che RPC), del calorimetro elettromagnetico e 
+	    del tracciatore centrale a strisce di silicio sono stati realizzati in Italia. 
+	    
+          </div>
+	</div>
+	
+      </div>
+
+
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+
+
+
+      
+    </div>
+    <!-- #su-content end --> 
+  </div>
+  <!-- #su-wrap end --> 
+  
+    
+  
+  
+    
+  <!-- #footer --> 
+  
+  <div id="footer" class="clearfix footer" role="contentinfo">
     <div class="container">
-      <div class="row">
-        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
-      <!-- .row end --> 
+      <div id="footer-content" class="row">
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Theses</h3>
+            <ul class="footer-list">
+	      <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
+	      <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
+	      <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
+	      <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
+	      <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
+	      <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
+	      <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>People</h3>
+            <ul class="footer-list">
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>About CMS Torino</h3>
+            <ul class="footer-list">
+	      <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Resources</h3>
+            <ul class="footer-list">
+	      <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
+	      <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
+	      <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
+	      <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
+	      <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
+	      <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
+            </ul>
+          </div>
+	</div>
+      </div>
     </div>
-    <!-- .container end --> 
+    
+    <!-- Global footer snippet start -->
+    <div id="global-footer">
+      <div class="container">
+	<div class="row">
+          <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
+	  <!-- .row end --> 
+	</div>
+	<!-- .container end --> 
+      </div>
+      <!-- global-footer end --> 
+      <!-- Global footer snippet end --> 
+      
+    </div>
+    
   </div>
-  <!-- global-footer end --> 
-  <!-- Global footer snippet end --> 
+  <!-- footer --> 
   
-</div>
- 
-
-<!-- JS and jQuery -->
-<script src="CMSTorino_files/jquery_002.js"></script>
-<script src="CMSTorino_files/jquery-mobile-1.js"></script> 
-<script src="CMSTorino_files/modernizr.js"></script> 
-<script src="CMSTorino_files/bootstrap.js"></script>
-<script src="CMSTorino_files/jquery_003.js"></script> 
-<script src="CMSTorino_files/jquery.js"></script> 
-
-<!--[if lt IE 9]>
-	<script src="assets/js/respond.js"></script>
-<![endif]--> 
-<!-- Custom JS --> 
-<script src="CMSTorino_files/base.js"></script> 
-<script src="CMSTorino_files/homepage.js"></script>
-
-
-<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>
+  
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  
+  
+  
+  <!-- JS and jQuery -->
+  <script src="CMSTorino_files/jquery_002.js"></script>
+  <script src="CMSTorino_files/jquery-mobile-1.js"></script> 
+  <script src="CMSTorino_files/modernizr.js"></script> 
+  <script src="CMSTorino_files/bootstrap.js"></script>
+  <script src="CMSTorino_files/jquery_003.js"></script> 
+  <script src="CMSTorino_files/jquery.js"></script> 
+  
+  <!--[if lt IE 9]>
+      <script src="assets/js/respond.js"></script>
+      <![endif]--> 
+  <!-- Custom JS --> 
+  <script src="CMSTorino_files/base.js"></script> 
+  <script src="CMSTorino_files/homepage.js"></script>
+  
+  
+  <div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>

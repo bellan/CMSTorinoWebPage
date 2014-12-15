@@ -45,336 +45,363 @@
   ga('create', 'UA-1860414-1', 'CMSTorino.html');
   ga('send', 'pageview');
 </script>
-<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script>
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
 
-
-
-</head>
-
- <!-- ________________________________________________________________________________________________________ -->
-
-<body>
-
-<div id="su-wrap"> 
-  <!-- #su-wrap start -->
-  <div id="su-content"> <!-- #su-content start --> 
-    
-    <!-- #header --> 
- <!--=== Top ===-->
-  <div id="top">
-    <div class="container"> 
-      <!--=== Skip links ===-->
-      <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
-      <!-- /Skip links --> 
-    </div>
-    </div>
-  <!--/top--> 
-
-  <div id="header" class="clearfix" role="banner">
-    <div class="container">
-      <div class="row">
-	<div class="col-md-8"> 
-        <!-- Logo -->
-        <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
-        <!-- /logo --> 
-	</div>
-      </div>
-    </div>
-  </div>
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ______________________________________BODY______________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
   
-  <!-- Menu -->
-  <div id="mainmenu" class="clearfix" role="navigation">
-    <div class="container">
-      <div class="navbar navbar-default"> 
+<body>
+  
+  <div id="su-wrap"> 
+    <!-- #su-wrap start -->
+    <div id="su-content"> <!-- #su-content start --> 
       
-	<!-- main navigation -->
-	<button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
-      <!-- /nav-collapse -->
-      
-      <div class="navbar-collapse collapse"> 
-        <div role="navigation">
-          <div id="primary-nav" tabindex="0">
-            <ul class="nav navbar-nav" aria-label="primary navigation">
-              <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
-              <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
-	      <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
-              <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
-            </ul>
-          </div>
-          <div id="gateway-nav">
-            <h4>Information for...</h4>
-            <ul id="gateways" class="pull-right" aria-label="gateways">
-              <li id="nav-students"><a href="info_students.html">Students</a></li>
-              <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- /nav-collapse --> 
-      </div>
-      <!-- /navbar --> 
-      
-    </div>
-    <!-- /container --> 
-  </div>
-
-    <!--=== Header ===-->
-
-    <!-- /mainmenu --> 
-
-    <div id="content" role="main" tabindex="0">
-
-      <center>
-	<div class="news-img">
-	  <a href="http://cms.web.cern.ch/news/englert-and-higgs-get-nobel" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS-ATLAS Nobel"><img src="nobel_2013.jpg" class="img-responsive" alt="Higgs and Englert get the Nobel" width="35%" height="35%"></a>
+      <!--=== Top ===-->
+      <div id="top">
+	<div class="container"> 
+	  <!--=== Skip links ===-->
+	  <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
+	  <!-- /Skip links --> 
 	</div>
-      </center>
-      
-      
-      
-      
-      <div class="container margin-bottom-30"> 
-        <!-- Top Stories -->
-        <div class="headline">
-          <h2>Top Activities in Torino</h2>
-        </div>
-        <div class="row" id="news"> 
-          <!-- Top Stories include file --> 
-          
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="physics_analysis.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="cms_physics.jpg" class="img-responsive" alt="Physics summary plot"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="physics_analysis.html" class="su-link" data-ua-action="hp-news">Physics Analysis</a></h3>
-	      <p>On-going analyses in the Torino Group.</p>
-	    </div>
-	  </div>
-	  
-	  
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="tracker.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="tracker_eye_small.jpg" class="img-responsive" alt="CMS Tracker"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="tracker.html" class="su-link" data-ua-action="hp-news">Silicon Tracker</a></h3>
-	      <p>The group's work on the silicon tracker.</p>
-	    </div>
-	  </div>
-	  
+      </div>
+      <!--/top--> 
 
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="ecal.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="ecal_hut_small.jpg" class="img-responsive" alt="CMS ECAL"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="ecal.html" class="su-link" data-ua-action="hp-news">Electromagnetic Calorimeter</a></h3>
-	      <p>The group's activity on the ECAL detector.</p>
-	    </div>
-	  </div>
-	  
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="drift_tubes.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="DT_xmastree_small.jpg" class="img-responsive" alt="CMS Drift Tubes"  width="90%" height="90%"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="drift_tubes.html" class="su-link" data-ua-action="hp-news">Drift Tube Chambers</a></h3>
-	      <p>The group's work on the DT chambers.</p>
+      <!-- #header -->       
+      <div id="header" class="clearfix" role="banner">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-8"> 
+              <!-- Logo -->
+              <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
+              <!-- /logo --> 
 	    </div>
 	  </div>
-	  
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="pps.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="pps_arm_small.jpg" class="img-responsive" alt="CMS PPS"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="pps.html" class="su-link" data-ua-action="hp-news">PPS</a></h3>
-	      <p>The group's work on the Precision Proton Spectrometer.</p>
-	    </div>
-	  </div>
-	  
-	  <div class="col-sm-3 news-item">
-	    <div class="news-img">
-	      <a href="software.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="event_small.jpg" class="img-responsive" alt="CMS 4mu event display"   width="83%" height="83%"></a>
-	    </div>
-	    <div class="news-text">
-	      <h3><a href="software.html" class="su-link" data-ua-action="hp-news">Software Development</a></h3>
-	      <p>Software development for reconstruction, calibration and alignment in Torino.</p>
-	    </div>
-	  </div>
-	  
-	  
-          
-          <div class="col-sm-3" id="more-news">
-            <h4>More headlines in Torino</h4>
-            <ul>
-              <!-- More Headlines include file --> 
-              <li><a href="upgrade.html" class="su-link" data-ua-action="hp-news" data-ua-label="CMS+Detector+upgrade">CMS Detector Upgrade</a></li>
-              <li><a href="future_technologies.html" class="su-link" data-ua-action="hp-news" data-ua-label="Future+detector+technologies">Future Detector Technologies</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- //End Top Stories --> 
+	</div>
       </div>
       
-      <!-- Social Media Row -->
-
-      <div class="container  margin-bottom-20">
-	
-        <div class="col-sm-9">
-          <div class="headline">
-            <h2>Highlights</h2>
-	  </div>
-	  
-          <div id="social-feature" class="row">
-            <span class="screen-reader">Highlights</span>
-	    <div class="col-xs-12 col-sm-3 text-center" id="tweet_info">
-	      <p class="social-timestamp"><time class="timeago" datetime="2014-11-19T16:41:05-08:00">1 hr.</time><br>ago</p>
-	    </div>
-	    <div class="col-xs-12 col-sm-9" id="tweet_text">
-	      <p>This site has been updated!</p>
-	    </div> 
-          </div>
-	  
-        </div>
-      </div>
-      
-      
-      <!-- //End Social Media Row --> 
-      
-      <!-- At CMS  Row -->
-      <div class="container  margin-bottom-20">
-        <div class="row">
-          <div class="col-sm-9">
-            <div class="row"> 
-              
-              <!-- Events -->
-              <div class="col-sm-6" id="event-list">
-                <div class="headline">
-                  <h2>Events</h2>
-                </div>
-                <!-- Events include file --> 
-                 
-		<div class="event postcard-left">
-		  <div class="event-date">
-		    <span class="event-month">NOV</span> <span class="event-day">20</span>
-		  </div>
-		  <div class="event-text">
-		    <h3><a href="PosterTesiCMS.pdf" class="su-link" data-ua-action="hp-event" data-ua-label="id ">Master thesis opportunities</a></h3>
-		    <p class="timestamp">13:00</p>
-		  </div>
+      <!-- Menu -->
+      <div id="mainmenu" class="clearfix" role="navigation">
+	<div class="container">
+	  <div class="navbar navbar-default"> 
+	    
+	    <!-- main navigation -->
+	    <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+	    <!-- /nav-collapse -->
+	    
+	    <div class="navbar-collapse collapse"> 
+              <div role="navigation">
+		<div id="primary-nav" tabindex="0">
+		  <ul class="nav navbar-nav" aria-label="primary navigation">
+		    <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
+		    <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
+		    <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
+		    <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
+		  </ul>
 		</div>
-		
-		
-		<div class="event postcard-left">
-		  <div class="event-date">
-		    <span class="event-month">NOV</span> <span class="event-day">17-20</span>
-		  </div>
-		  <div class="event-text">
-		    <h3><a href="https://agenda.infn.it/conferenceDisplay.py?ovw=True&confId=8292" class="su-link" data-ua-action="hp-event" data-ua-label="id ">CMS Italia Napoli</a></h3>
-		    <p class="timestamp">14:00</p>
-		  </div>
+		<div id="gateway-nav">
+		  <h4>Information for...</h4>
+		  <ul id="gateways" class="pull-right" aria-label="gateways">
+		    <li id="nav-students"><a href="info_students.html">Students</a></li>
+		    <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
+		  </ul>
 		</div>
-		
               </div>
+	    </div>
+	    <!-- /nav-collapse --> 
+	  </div>
+	  <!-- /navbar --> 
+	  
+	</div>
+	<!-- /container --> 
+      </div>     
+      <!--=== Header ===-->
+
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      
+      <!-- /mainmenu --> 
+      
+      <div id="content" role="main" tabindex="0">
+	
+	<center>
+	  <div class="news-img">
+	    <a href="http://cms.web.cern.ch/news/englert-and-higgs-get-nobel" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS-ATLAS Nobel"><img src="nobel_2013.jpg" class="img-responsive" alt="Higgs and Englert get the Nobel" width="35%" height="35%"></a>
+	  </div>
+	</center>
+	
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Top Stories -->
+          <div class="headline">
+            <h2>Top Activities in Torino</h2>
+          </div>
+          <div class="row" id="news"> 
+            <!-- Top Stories include file --> 
+            
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="physics_analysis.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="cms_physics.jpg" class="img-responsive" alt="Physics summary plot"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="physics_analysis.html" class="su-link" data-ua-action="hp-news">Physics Analysis</a></h3>
+		<p>On-going analyses in the Torino Group.</p>
+	      </div>
+	    </div>
+	    
+	    
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="tracker.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="tracker_eye_small.jpg" class="img-responsive" alt="CMS Tracker"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="tracker.html" class="su-link" data-ua-action="hp-news">Silicon Tracker</a></h3>
+		<p>The group's work on the silicon tracker.</p>
+	      </div>
+	    </div>
+	    
+	    
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="ecal.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="ecal_hut_small.jpg" class="img-responsive" alt="CMS ECAL"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="ecal.html" class="su-link" data-ua-action="hp-news">Electromagnetic Calorimeter</a></h3>
+		<p>The group's activity on the ECAL detector.</p>
+	      </div>
+	    </div>
+	    
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="drift_tubes.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="DT_xmastree_small.jpg" class="img-responsive" alt="CMS Drift Tubes"  width="90%" height="90%"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="drift_tubes.html" class="su-link" data-ua-action="hp-news">Drift Tube Chambers</a></h3>
+		<p>The group's work on the DT chambers.</p>
+	      </div>
+	    </div>
+	    
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="pps.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="pps_arm_small.jpg" class="img-responsive" alt="CMS PPS"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="pps.html" class="su-link" data-ua-action="hp-news">PPS</a></h3>
+		<p>The group's work on the Precision Proton Spectrometer.</p>
+	      </div>
+	    </div>
+	    
+	    <div class="col-sm-3 news-item">
+	      <div class="news-img">
+		<a href="software.html" class="su-link" data-ua-action="hp-news" title="Photo Credit: CMS"><img src="event_small.jpg" class="img-responsive" alt="CMS 4mu event display"   width="83%" height="83%"></a>
+	      </div>
+	      <div class="news-text">
+		<h3><a href="software.html" class="su-link" data-ua-action="hp-news">Software Development</a></h3>
+		<p>Software development for reconstruction, calibration and alignment in Torino.</p>
+	      </div>
+	    </div>
+	    
+	    
+            
+            <div class="col-sm-3" id="more-news">
+              <h4>More headlines in Torino</h4>
+              <ul>
+		<!-- More Headlines include file --> 
+		<li><a href="upgrade.html" class="su-link" data-ua-action="hp-news" data-ua-label="CMS+Detector+upgrade">CMS Detector Upgrade</a></li>
+		<li><a href="future_technologies.html" class="su-link" data-ua-action="hp-news" data-ua-label="Future+detector+technologies">Future Detector Technologies</a></li>
+              </ul>
             </div>
           </div>
+          <!-- //End Top Stories --> 
+	</div>
+	
+	<!-- Social Media Row -->
+	
+	<div class="container  margin-bottom-20">
+	  
+          <div class="col-sm-9">
+            <div class="headline">
+              <h2>Highlights</h2>
+	    </div>
+	    
+            <div id="social-feature" class="row">
+              <span class="screen-reader">Highlights</span>
+	      <div class="col-xs-12 col-sm-3 text-center" id="tweet_info">
+		<p class="social-timestamp"><time class="timeago" datetime="2014-11-19T16:41:05-08:00">1 hr.</time><br>ago</p>
+	      </div>
+	      <div class="col-xs-12 col-sm-9" id="tweet_text">
+		<p>This site has been updated!</p>
+	      </div> 
+            </div>
+	    
+          </div>
 	</div>
 	
 	
+	<!-- //End Social Media Row --> 
+	
+	<!-- At CMS  Row -->
+	<div class="container  margin-bottom-20">
+          <div class="row">
+            <div class="col-sm-9">
+              <div class="row"> 
+		
+		<!-- #Events -->
+		<div class="col-sm-6" id="event-list">
+                  <div class="headline">
+                    <h2>Events</h2>
+                  </div>
+                  <!-- Events include file --> 
+                  
+		  <div class="event postcard-left">
+		    <div class="event-date">
+		      <span class="event-month">NOV</span> <span class="event-day">20</span>
+		    </div>
+		    <div class="event-text">
+		      <h3><a href="PosterTesiCMS.pdf" class="su-link" data-ua-action="hp-event" data-ua-label="id ">Master thesis opportunities</a></h3>
+		      <p class="timestamp">13:00</p>
+		    </div>
+		  </div>
+		  
+		  
+		  <div class="event postcard-left">
+		    <div class="event-date">
+		      <span class="event-month">NOV</span> <span class="event-day">17-20</span>
+		    </div>
+		    <div class="event-text">
+		      <h3><a href="https://agenda.infn.it/conferenceDisplay.py?ovw=True&confId=8292" class="su-link" data-ua-action="hp-event" data-ua-label="id ">CMS Italia Napoli</a></h3>
+		      <p class="timestamp">14:00</p>
+		    </div>
+		  </div>
+		  
+		</div>
+		<!-- Events -->
+              </div>
+	      <!-- row -->
+            </div>
+	    <!-- col-sm-9 -->
+          </div>
+	  <!-- row -->	  	  
+	</div>
+	<!-- container -->
+	
       </div>
-      <!--/body--> 
+      <!-- content --> 
+
+
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+
+
+
+      
     </div>
     <!-- #su-content end --> 
   </div>
   <!-- #su-wrap end --> 
   
+    
+  
+  
+    
   <!-- #footer --> 
-
-<div id="footer" class="clearfix footer" role="contentinfo">
-  <div class="container">
-    <div id="footer-content" class="row">
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Theses</h3>
-          <ul class="footer-list">
-            <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
-            <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
-            <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
-            <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
-	    <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
-            <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
-            <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>People</h3>
-          <ul class="footer-list">
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>About CMS Torino</h3>
-          <ul class="footer-list">
-            <li><a href="history.html">History</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Resources</h3>
-          <ul class="footer-list">
-	    <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
-	    <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
-            <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
-            <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
-            <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
-            <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
   
-  <!-- Global footer snippet start -->
-  <div id="global-footer">
+  <div id="footer" class="clearfix footer" role="contentinfo">
     <div class="container">
-      <div class="row">
-        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
-      <!-- .row end --> 
+      <div id="footer-content" class="row">
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Theses</h3>
+            <ul class="footer-list">
+	      <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
+	      <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
+	      <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
+	      <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
+	      <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
+	      <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
+	      <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>People</h3>
+            <ul class="footer-list">
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>About CMS Torino</h3>
+            <ul class="footer-list">
+	      <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Resources</h3>
+            <ul class="footer-list">
+	      <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
+	      <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
+	      <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
+	      <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
+	      <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
+	      <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
+            </ul>
+          </div>
+	</div>
+      </div>
     </div>
-    <!-- .container end --> 
+    
+    <!-- Global footer snippet start -->
+    <div id="global-footer">
+      <div class="container">
+	<div class="row">
+          <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
+	  <!-- .row end --> 
+	</div>
+	<!-- .container end --> 
+      </div>
+      <!-- global-footer end --> 
+      <!-- Global footer snippet end --> 
+      
+    </div>
+    
   </div>
-  <!-- global-footer end --> 
-  <!-- Global footer snippet end --> 
-  
-  </div>
-
-
-
-</div>
+  <!-- footer --> 
   
   
-<!-- JS and jQuery -->
-<script src="CMSTorino_files/jquery_002.js"></script>
-<script src="CMSTorino_files/jquery-mobile-1.js"></script> 
-<script src="CMSTorino_files/modernizr.js"></script> 
-<script src="CMSTorino_files/bootstrap.js"></script>
-<script src="CMSTorino_files/jquery_003.js"></script> 
-<script src="CMSTorino_files/jquery.js"></script> 
-
-<!--[if lt IE 9]>
-<script src="assets/js/respond.js"></script>
-<![endif]--> 
-<!-- Custom JS --> 
-<script src="CMSTorino_files/base.js"></script> 
-<script src="CMSTorino_files/homepage.js"></script>
-
-
-<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  
+  
+  
+  <!-- JS and jQuery -->
+  <script src="CMSTorino_files/jquery_002.js"></script>
+  <script src="CMSTorino_files/jquery-mobile-1.js"></script> 
+  <script src="CMSTorino_files/modernizr.js"></script> 
+  <script src="CMSTorino_files/bootstrap.js"></script>
+  <script src="CMSTorino_files/jquery_003.js"></script> 
+  <script src="CMSTorino_files/jquery.js"></script> 
+  
+  <!--[if lt IE 9]>
+      <script src="assets/js/respond.js"></script>
+      <![endif]--> 
+  <!-- Custom JS --> 
+  <script src="CMSTorino_files/base.js"></script> 
+  <script src="CMSTorino_files/homepage.js"></script>
+  
+  
+  <div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>

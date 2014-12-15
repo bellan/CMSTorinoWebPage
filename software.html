@@ -45,266 +45,287 @@
   ga('create', 'UA-1860414-1', 'CMSTorino.html');
   ga('send', 'pageview');
 </script>
-<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script>
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
 
-</head>
-
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ______________________________________BODY______________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  
 <body>
-<div id="su-wrap"> 
-  <!-- #su-wrap start -->
-  <div id="su-content"> <!-- #su-content start --> 
-    
-    <!-- #header --> 
-    <!--=== Top ===-->
-<div id="top">
-  <div class="container"> 
-    <!--=== Skip links ===-->
-    <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
-    <!-- /Skip links --> 
-  </div>
-</div>
-<!--/top--> 
-
-<!--=== Header ===-->
-<div id="header" class="clearfix" role="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8"> 
-        <!-- Logo -->
-        <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
-        <!-- /logo --> 
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Menu -->
-<div id="mainmenu" class="clearfix" role="navigation">
-  <div class="container">
-    <div class="navbar navbar-default"> 
+  
+  <div id="su-wrap"> 
+    <!-- #su-wrap start -->
+    <div id="su-content"> <!-- #su-content start --> 
       
-      <!-- main navigation -->
-      <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
-      <!-- /nav-collapse -->
-      
-      <div class="navbar-collapse collapse"> 
-        <div role="navigation">
-          <div id="primary-nav" tabindex="0">
-            <ul class="nav navbar-nav" aria-label="primary navigation">
-              <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
-              <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
-	      <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
-              <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
-            </ul>
-          </div>
-          <div id="gateway-nav">
-            <h4>Information for...</h4>
-            <ul id="gateways" class="pull-right" aria-label="gateways">
-              <li id="nav-students"><a href="info_students.html">Students</a></li>
-              <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
-            </ul>
-          </div>
-        </div>
+      <!--=== Top ===-->
+      <div id="top">
+	<div class="container"> 
+	  <!--=== Skip links ===-->
+	  <div id="skip"> <a href="#content" onclick="$('#content').focus()">Skip to content</a> </div>
+	  <!-- /Skip links --> 
+	</div>
       </div>
-      <!-- /nav-collapse --> 
-    </div>
-    <!-- /navbar --> 
-    
-  </div>
-  <!-- /container --> 
-</div>
-<!-- /mainmenu --> 
+      <!--/top--> 
 
-    <div id="content" role="main" tabindex="0">
-
-      <div class="container margin-bottom-30"> 
-	<h1><i>Proposte di tesi</i></h1>
+      <!-- #header -->       
+      <div id="header" class="clearfix" role="banner">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-8"> 
+              <!-- Logo -->
+              <div id="logo" class="clearfix"> <a href="CMSTorino.html"><img class="img-responsive" src="CMS_Torino.png" alt="CMS Torino"></a> </div>
+              <!-- /logo --> 
+	    </div>
+	  </div>
+	</div>
       </div>
-
       
+      <!-- Menu -->
+      <div id="mainmenu" class="clearfix" role="navigation">
+	<div class="container">
+	  <div class="navbar navbar-default"> 
+	    
+	    <!-- main navigation -->
+	    <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+	    <!-- /nav-collapse -->
+	    
+	    <div class="navbar-collapse collapse"> 
+              <div role="navigation">
+		<div id="primary-nav" tabindex="0">
+		  <ul class="nav navbar-nav" aria-label="primary navigation">
+		    <li id="nav-about"> <a href="about_CMS.html">About CMS</a></li>
+		    <li id="nav-research"> <a href="research.html">Research @ Torino</a></li>
+		    <li id="nav-admission"> <a href="thesis.html">Theses</a> </li>
+		    <li id="nav-campuslife"> <a href="jobs.html">Job Opportunities</a></li>
+		  </ul>
+		</div>
+		<div id="gateway-nav">
+		  <h4>Information for...</h4>
+		  <ul id="gateways" class="pull-right" aria-label="gateways">
+		    <li id="nav-students"><a href="info_students.html">Students</a></li>
+		    <li id="nav-facstaff"><a href="info_faculty.html">Faculty / Staff</a></li>
+		  </ul>
+		</div>
+              </div>
+	    </div>
+	    <!-- /nav-collapse --> 
+	  </div>
+	  <!-- /navbar --> 
+	  
+	</div>
+	<!-- /container --> 
+      </div>     
+      <!--=== Header ===-->
 
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
       
-      <div class="container margin-bottom-30"> 
-        <!-- Theses -->
-        <div class="headline">
-          <h2>Studio di tecniche per ottimizzare la risoluzione spaziale dei rivelatori a muoni (Drift Tube)</h2>
-        </div>
-        <div class="col-sm-10" id="more-news">
-	  L'identificazione e la misura dei muoni nella regione centrale di CMS avviene per mezzo di un sistema di camere a deriva, 
-	  in cui posizione e direzione delle tracce vengono ricostruiti sulla base del tempo di deriva delle cariche prodotte per ionizzazione 
-	  al passaggio del muone attraverso vari strati di gas. Scopo della tesi &egrave; studiare nel dettaglio la risposta del rivelatore a muoni 
-	  da collisioni protone-protone in funzione di diversi parametri come angolo della traccia, posizione all'interno della cella di deriva, 
-	  e campo magnetico, per poi sviluppare algoritmi che permettano la ricostruzione della posizione con la maggiore risoluzione possibile. 
-            <h4>Contacts</h4>
-            <ul>
-              <!-- More Headlines include file --> 
-              <li><a href="mailto:amapane@to.infn.it">Dott. N. Amapane</a></li>
-            </ul>
-        </div>
-
-
-	<div class="container margin-bottom-30"> 
-        <!-- Theses -->
-        <div class="headline">
-          <h2>Misura del campo magnetico nel giogo del solenoide di CMS attraverso lo studio della curvatura dei muoni</h2>
-        </div>
-        <div class="col-sm-10" id="more-news">
-
-	  Nell'esperimento CMS il momento delle tracce cariche viene determinato attraverso la misura della loro curvatura nel campo magnetico 
-	  prodotto dal pi&ugrave; grande solenoide superconduttore che sia mai stato costruito.
-	  Mentre il campo magnetico all'interno del solenoide &egrave; stato misurato con eccellente accuratezza, esso &egrave; noto in modo poco 
-	  accurato nel giogo di ritorno del solenoide, una gigantesca struttura di acciaio equipaggiata con rivelatori di muoni. Scopo della 
-	  tesi &egrave; quello di ottenere una misura accurata del campo magnetico nel giogo attraverso lo studio della curvatura di muoni prodotti da 
-	  decadimenti di bosoni W e Z, il cui momento &egrave; misurato in modo indipendente nel tracciatore interno. 
-
-            <h4>Contacts</h4>
-            <ul>
-              <!-- More Headlines include file --> 
-              <li><a href="mailto:amapane@to.infn.it">Dott. N. Amapane</a></li>
-            </ul>
-        </div>
-      </div>
+      
+      <div id="content" role="main" tabindex="0">
 	
-
-      <div class="container margin-bottom-30"> 
-        <!-- Theses -->
-        <div class="headline">
-          <h2>Ottimizzazione del rivelatore a pixel di CMS per per l'High Luminosity LHC </h2>
-        </div>
-        <div class="col-sm-10" id="more-news">
-	  Nei prossimi due anni, l'esperimento CMS dovr&agrave; definire come sar&agrave; fatto il rivelatore a pixel che sar&agrave;
-	  impiegato nell'esperimento nella fase di funzionamento di LHC ad una luminosit&agrave;, quasi 10 volte quella attuale.
-	  La tesi si propone di sviluppare una simulazione dettagliata del rivelatore a pixel per studiare come differenti configurazioni della
-	  geometria delle celle e dell'elettronica di lettura determinino le prestazioni dello strumento
-	  (risoluzione sul punto di origine delle tracce, capacit&agrave; di discriminare eventi di pile-up, capacit&agrave; di identificare jet contenenti quark b). 
+	<div class="container margin-bottom-30"> 
+	  <h1><i>Proposte di tesi</i></h1>
+	</div>
+	
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Theses -->
+          <div class="headline">
+            <h2>Studio di tecniche per ottimizzare la risoluzione spaziale dei rivelatori a muoni (Drift Tube)</h2>
+          </div>
+          <div class="col-sm-10" id="more-news">
+	    L'identificazione e la misura dei muoni nella regione centrale di CMS avviene per mezzo di un sistema di camere a deriva, 
+	    in cui posizione e direzione delle tracce vengono ricostruiti sulla base del tempo di deriva delle cariche prodotte per ionizzazione 
+	    al passaggio del muone attraverso vari strati di gas. Scopo della tesi &egrave; studiare nel dettaglio la risposta del rivelatore a muoni 
+	    da collisioni protone-protone in funzione di diversi parametri come angolo della traccia, posizione all'interno della cella di deriva, 
+	    e campo magnetico, per poi sviluppare algoritmi che permettano la ricostruzione della posizione con la maggiore risoluzione possibile. 
             <h4>Contacts</h4>
             <ul>
               <!-- More Headlines include file --> 
-              <li><a href="mailto:migliore@to.infn.it">Prof. E. Migliore</a></li>
+              <li><a href="mailto:amapane@to.infn.it">Dott. N. Amapane</a></li>
             </ul>
+          </div>
         </div>
 
-
-      <div class="container margin-bottom-30"> 
-        <!-- Theses -->
-        <div class="headline">
-          <h2>Studi di algoritmi di clusterizzazione per il rivelatore a pixel di CMS per per l'High Luminosity LHC </h2>
-        </div>
-        <div class="col-sm-10" id="more-news">
-	  Una delle sfide dei rivelatori a pixel che opereranno nella fase di LHC ad alta luminosit&agrave; &egrave; portare fuori dal rivelatore
-	  la massima informazione con il minor numero di bit. A tale scopo si sta indagando l'uso di nuove configurazioni della geometria
-	  delle celle dei pixel e l'uso di algoritmi per la compressione dei dati forniti dal rivelatore.
-	  Questa tesi si propone di analizzare sistematicamente i vari pattern presenti sul rivelatore a pixel in presenza di un segnale, con un duplice scopo:
-	  determinare il fattore di riduzione dei dati in uscita, usando algoritmi di compressione dati facilmente implementabili sull'elettronica di front-end;
-	  sviluppare algoritmi di clusterizzazione e ricostruzione della posizione delle tracce in caso di geometrie dei pixel differenti dalla attuale. 
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Theses -->
+          <div class="headline">
+            <h2>Misura del campo magnetico nel giogo del solenoide di CMS attraverso lo studio della curvatura dei muoni</h2>
+          </div>
+          <div class="col-sm-10" id="more-news">
+	    Nell'esperimento CMS il momento delle tracce cariche viene determinato attraverso la misura della loro curvatura nel campo magnetico 
+	    prodotto dal pi&ugrave; grande solenoide superconduttore che sia mai stato costruito.
+	    Mentre il campo magnetico all'interno del solenoide &egrave; stato misurato con eccellente accuratezza, esso &egrave; noto in modo poco 
+	    accurato nel giogo di ritorno del solenoide, una gigantesca struttura di acciaio equipaggiata con rivelatori di muoni. Scopo della 
+	    tesi &egrave; quello di ottenere una misura accurata del campo magnetico nel giogo attraverso lo studio della curvatura di muoni prodotti da 
+	    decadimenti di bosoni W e Z, il cui momento &egrave; misurato in modo indipendente nel tracciatore interno. 
+	    
             <h4>Contacts</h4>
             <ul>
-              <!-- More Headlines include file --> 
-              <li><a href="mailto:migliore@to.infn.it">Prof. E. Migliore</a></li>
+	      <!-- More Headlines include file --> 
+	      <li><a href="mailto:amapane@to.infn.it">Dott. N. Amapane</a></li>
             </ul>
+          </div>
+	</div>
+	
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Theses -->
+          <div class="headline">
+            <h2>Ottimizzazione del rivelatore a pixel di CMS per per l'High Luminosity LHC </h2>
+          </div>
+          <div class="col-sm-10" id="more-news">
+	    Nei prossimi due anni, l'esperimento CMS dovr&agrave; definire come sar&agrave; fatto il rivelatore a pixel che sar&agrave;
+	    impiegato nell'esperimento nella fase di funzionamento di LHC ad una luminosit&agrave;, quasi 10 volte quella attuale.
+	    La tesi si propone di sviluppare una simulazione dettagliata del rivelatore a pixel per studiare come differenti configurazioni della
+	    geometria delle celle e dell'elettronica di lettura determinino le prestazioni dello strumento
+	    (risoluzione sul punto di origine delle tracce, capacit&agrave; di discriminare eventi di pile-up, capacit&agrave; di identificare jet contenenti quark b). 
+            <h4>Contacts</h4>
+            <ul>
+	      <!-- More Headlines include file --> 
+	      <li><a href="mailto:migliore@to.infn.it">Prof. E. Migliore</a></li>
+            </ul>
+          </div>
         </div>
+	
+	
+	<div class="container margin-bottom-30"> 
+          <!-- Theses -->
+          <div class="headline">
+	    <h2>Studi di algoritmi di clusterizzazione per il rivelatore a pixel di CMS per per l'High Luminosity LHC </h2>
+          </div>
+          <div class="col-sm-10" id="more-news">
+	    Una delle sfide dei rivelatori a pixel che opereranno nella fase di LHC ad alta luminosit&agrave; &egrave; portare fuori dal rivelatore
+	    la massima informazione con il minor numero di bit. A tale scopo si sta indagando l'uso di nuove configurazioni della geometria
+	    delle celle dei pixel e l'uso di algoritmi per la compressione dei dati forniti dal rivelatore.
+	    Questa tesi si propone di analizzare sistematicamente i vari pattern presenti sul rivelatore a pixel in presenza di un segnale, con un duplice scopo:
+	    determinare il fattore di riduzione dei dati in uscita, usando algoritmi di compressione dati facilmente implementabili sull'elettronica di front-end;
+	    sviluppare algoritmi di clusterizzazione e ricostruzione della posizione delle tracce in caso di geometrie dei pixel differenti dalla attuale. 
+	    <h4>Contacts</h4>
+	    <ul>
+	      <!-- More Headlines include file --> 
+	      <li><a href="mailto:migliore@to.infn.it">Prof. E. Migliore</a></li>
+	    </ul>
+          </div>
+	</div>
+	
+      </div>	    
+      
+      
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
+      <!-- ________________________________________________________________________________________________________ -->
 
 
 
-
+      
     </div>
-    <!--/body--> 
+    <!-- #su-content end --> 
   </div>
-  <!-- #su-content end --> 
-</div>
-<!-- #su-wrap end --> 
-
-<!-- #footer --> 
-
-<div id="footer" class="clearfix footer" role="contentinfo">
-  <div class="container">
-    <div id="footer-content" class="row">
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Theses</h3>
-          <ul class="footer-list">
-            <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
-            <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
-            <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
-            <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
-	    <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
-            <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
-            <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>People</h3>
-          <ul class="footer-list">
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
-            <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>About CMS Torino</h3>
-          <ul class="footer-list">
-            <li><a href="history.html">History</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1-4 col-md-2">
-        <div class="block">
-          <h3>Resources</h3>
-          <ul class="footer-list">
-	    <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
-	    <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
-            <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
-            <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
-            <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
-            <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- #su-wrap end --> 
   
-  <!-- Global footer snippet start -->
-  <div id="global-footer">
+    
+  
+  
+    
+  <!-- #footer --> 
+  
+  <div id="footer" class="clearfix footer" role="contentinfo">
     <div class="container">
-      <div class="row">
-        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
-      <!-- .row end --> 
+      <div id="footer-content" class="row">
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Theses</h3>
+            <ul class="footer-list">
+	      <li><a href="physics_analysis.html" class="su-link" data-ua-label="footer">Physics Analyses</a></li>
+	      <li><a href="tracker.html" class="su-link" data-ua-label="footer">Silicon Tracker</a></li>
+	      <li><a href="ecal.html" class="su-link" data-ua-label="footer">Electromagnetic Calorimeter</a></li>
+	      <li><a href="drift_tubes.html" class="su-link" data-ua-label="footer">Drift Tube Chambers</a></li>
+	      <li><a href="pps.html" class="su-link" data-ua-label="footer">Precision Proton Spectrometer</a></li>
+	      <li><a href="software.html" class="su-link" data-ua-label="footer">Reconstruction and Calibration</a></li>
+	      <li><a href="future_technologies.html" class="su-link" data-ua-label="footer">Future Detector Technologies</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>People</h3>
+            <ul class="footer-list">
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Staff</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Post-docs</a></li>
+	      <li><a href="people.html" class="su-link" data-ua-label="footer">Students</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>About CMS Torino</h3>
+            <ul class="footer-list">
+	      <li><a href="history.html">History</a></li>
+            </ul>
+          </div>
+	</div>
+	<div class="col-xs-12 col-sm-1-4 col-md-2">
+          <div class="block">
+            <h3>Resources</h3>
+            <ul class="footer-list">
+	      <li><a href="http://www.to.infn.it/wiki/doku.php?id=cms:home">CMS Torino wiki</a></li>
+	      <li><a href="https://web.infn.it/cms/">CMS Italia</a></li>
+	      <li><a href="http://cms.web.cern.ch/">CMS web page</a></li>
+	      <li><a href="http://cms.cern.ch/iCMS/" class="su-link" data-ua-label="footer">iCMS</a></li>
+	      <li><a href="twiki.cern.ch/" class="su-link" data-ua-label="footer">CMS Public Results</a></li>
+	      <li><a href="home.web.cern.ch/" class="su-link" data-ua-label="footer">CERN</a></li>
+            </ul>
+          </div>
+	</div>
+      </div>
     </div>
-    <!-- .container end --> 
+    
+    <!-- Global footer snippet start -->
+    <div id="global-footer">
+      <div class="container">
+	<div class="row">
+          <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="mailto:bellan@to.infn.it"> Write to the web master </a> </div>
+	  <!-- .row end --> 
+	</div>
+	<!-- .container end --> 
+      </div>
+      <!-- global-footer end --> 
+      <!-- Global footer snippet end --> 
+      
+    </div>
+    
   </div>
-  <!-- global-footer end --> 
-  <!-- Global footer snippet end --> 
+  <!-- footer --> 
   
-  </div>
-
-
-
-</div>
-
-
-
-
-
- 
-
-<!-- JS and jQuery -->
-<script src="CMSTorino_files/jquery_002.js"></script>
-<script src="CMSTorino_files/jquery-mobile-1.js"></script> 
-<script src="CMSTorino_files/modernizr.js"></script> 
-<script src="CMSTorino_files/bootstrap.js"></script>
-<script src="CMSTorino_files/jquery_003.js"></script> 
-<script src="CMSTorino_files/jquery.js"></script> 
-
-<!--[if lt IE 9]>
-	<script src="assets/js/respond.js"></script>
-<![endif]--> 
-<!-- Custom JS --> 
-<script src="CMSTorino_files/base.js"></script> 
-<script src="CMSTorino_files/homepage.js"></script>
-
-
-<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>
+  
+  <!-- ________________________________________________________________________________________________________ -->
+  <!-- ________________________________________________________________________________________________________ -->
+  
+  
+  
+  <!-- JS and jQuery -->
+  <script src="CMSTorino_files/jquery_002.js"></script>
+  <script src="CMSTorino_files/jquery-mobile-1.js"></script> 
+  <script src="CMSTorino_files/modernizr.js"></script> 
+  <script src="CMSTorino_files/bootstrap.js"></script>
+  <script src="CMSTorino_files/jquery_003.js"></script> 
+  <script src="CMSTorino_files/jquery.js"></script> 
+  
+  <!--[if lt IE 9]>
+      <script src="assets/js/respond.js"></script>
+      <![endif]--> 
+  <!-- Custom JS --> 
+  <script src="CMSTorino_files/base.js"></script> 
+  <script src="CMSTorino_files/homepage.js"></script>
+  
+  
+  <div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="size-detect-xs"></div><div class="size-detect-sm"></div><div class="size-detect-md"></div><div class="size-detect-lg"></div></body></html>
